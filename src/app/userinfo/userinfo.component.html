@@ -1,0 +1,30 @@
+<div class="container bg-grey" style="padding: 60px 50px;">
+  <h1 class="text-center text-danger"><u><i>WELCOME</i></u></h1>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Hey {{ UserId | uppercase }}! </h2>
+    </div>
+    <div class="col-sm-10">
+      <div class="row">
+        <hr>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="..\..\assets\User.png" class="media-object" style="width:160px">
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Your Account Information: </h3>
+            <br><p><strong>Email Id:</strong> {{ email }}</p>
+            <br><p><strong>Phone No.</strong> {{ phoneNo }}</p>
+            <br><p><strong>Gender  :</strong> {{ sex }}</p>
+            <br><p><strong>Address :</strong> {{ address }}</p>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <a (click)="OnLogOut()" class="btn btn-warning pull-right" role="button">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

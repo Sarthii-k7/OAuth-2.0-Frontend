@@ -1,0 +1,30 @@
+.navbar {
+  margin-bottom: 1px ;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 15px ;
+  line-height: 1.42857143 ;
+  letter-spacing: 3.5px;
+  border-radius: 0;
+}
+
+.navbar header{
+  font-size: 18px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff ;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e;
+  background-color: #fff ;
+  text-decoration: underline;
+  /*border-bottom: 6px  #999;*/
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}

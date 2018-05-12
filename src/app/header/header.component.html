@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a  routerLink="/home" class="navbar-brand"><strong>AbC|</strong><i>All 'bout Cars</i></a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/info" >Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a class="dropdown-toggle" role="button"><span class="glyphicon glyphicon-log-in"></span> LOG IN <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <app-signin></app-signin>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
